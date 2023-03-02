@@ -1,0 +1,204 @@
+/* general */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+/* estilos de lista desordenadas */
+ul{
+    list-style: none;
+}
+
+/* estilos del container principal */
+.container_general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+
+/* estilos del titulo */
+.animal_title {
+  color: rgb(0, 10, 146);
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+
+/* estilos del input */
+.input_animals {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border: none;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #1f1f1f;
+  padding-left:18px ;
+  color: white;
+}
+
+/* estilo del placeholder del input */
+input[type="text"]::placeholder {
+  color: #757575;
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* el estilo del borde del input */
+input[type="text"]:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+/* estilos del texto de carga */
+.textCharge{
+    margin-bottom: 40px;
+    font-style: italic;
+    color: gray;
+}
+
+/* estilo del texto */
+.animalsText{
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: rgb(60, 60, 60);
+    line-height: 20px;
+}
+
+/* estilos del li general */
+.listAnimals{
+    margin-bottom: 40px;
+}
+
+/* estilos de la linea de abajo */
+.lineAnimal{
+   margin-top: 20px;
+   border: 1px solid #1f1f1f;;
+}
+
+.styleListAnimals{
+    color: gray;
+    padding-bottom: 10px;
+    font-size: 18px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.textAnimals{
+    color: white;
+}
+
+.textAnimals2{
+  color: gray;
+}
+
+
+@media (min-width:640px) {
+  .styleListAnimals{
+    text-align: start;
+    padding-right: 0px;
+    padding-left: 40px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width:768px) {
+  .lineAnimal{
+    width: 70%;
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+
+  .input_animals{
+    width: 80%;
+  }
+
+  .styleListAnimals{
+    width: 85%;
+    display: inline-block;
+    margin: 0 auto;
+    line-height: 30px;
+  }
+}
+
+@media (min-width:1152px) {
+  .input_animals{
+    width: 70%;
+  }
+
+  .styleListAnimals{
+    width: 75%;
+  }
+}
+
+@media (min-width:1280px) {
+  .input_animals{
+    width: 60%;
+  }
+
+  .styleListAnimals{
+    width: 65%;
+  }
+
+  .lineAnimal{
+    width: 50%;
+  }
+}
+
+@media (min-width:1600px) {
+  .styleListAnimals{
+    font-size: 28px;
+    line-height: 45px;
+  }
+
+  .input_animals{
+    font-size: 23px;
+  }
+  
+  .textCharge{
+    font-size: 40px;
+  }
+
+  .animalsText{
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width:2048px) {
+  .styleListAnimals{
+    font-size: 35px;
+    line-height: 55px;
+  }
+
+  .input_animals{
+    font-size: 30px;
+  }
+  
+  .textCharge{
+    font-size: 40px;
+  }
+
+  .animalsText{
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
